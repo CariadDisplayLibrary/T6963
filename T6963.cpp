@@ -17,6 +17,17 @@ void T6963::initializeDevice() {
     digitalWrite(_rd, HIGH);
     digitalWrite(_cd, HIGH);
     digitalWrite(_ce, LOW);
+
+    if (_res != 255) {
+        pinMode(_res, OUTPUT);
+        digitalWrite(_res, HIGH);
+        delay(40);
+        digitalWrite(_res, LOW);
+        delay(40);
+        digitalWrite(_res, HIGH);
+        delay(40);
+    }
+
     data(0);
     data(0);
     command(T6963_SET_GRAPHIC_HOME_ADDRESS);

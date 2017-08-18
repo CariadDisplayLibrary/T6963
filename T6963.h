@@ -22,6 +22,8 @@ class T6963 : public DisplayCore {
         uint8_t _d6;
         uint8_t _d7;
 
+        uint8_t _res;
+
         int _buffered;
 
         static const uint8_t T6963_CURSOR_PATTERN_SELECT = 0xA0;
@@ -58,11 +60,12 @@ class T6963 : public DisplayCore {
         T6963(
             uint8_t rd, uint8_t wr, uint8_t cd, uint8_t ce,
             uint8_t d0, uint8_t d1, uint8_t d2, uint8_t d3,
-            uint8_t d4, uint8_t d5, uint8_t d6, uint8_t d7
+            uint8_t d4, uint8_t d5, uint8_t d6, uint8_t d7,
+            uint8_t res = 255
         ) : _rd(rd), _wr(wr), _cd(cd), _ce(ce),
             _d0(d0), _d1(d1), _d2(d2), _d3(d3),
             _d4(d4), _d5(d5), _d6(d6), _d7(d7),
-            _buffered(0) {
+            _res(res), _buffered(0) {
             _width = 256;
             _height = 64;
         }
