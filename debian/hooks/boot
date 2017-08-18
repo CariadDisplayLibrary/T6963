@@ -20,7 +20,7 @@ open(LOG, "git log --reverse --pretty=format:'%aN|%aE|%cD|%s'|");
 while (my $l = <LOG>) {
     chomp($l);
     my ($author, $email, $time, $subject) = split(/\|/, $l);
-    my $add ="$package (1.$maj.$min) uecide; urgency=low\n";
+    my $add ="$package (2.$maj.$min) uecide; urgency=low\n";
     $add .= "\n";
     $add .= "  * $subject\n";
     $add .= "\n";
