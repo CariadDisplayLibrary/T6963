@@ -24,13 +24,14 @@ void T6963::initializeDevice() {
     data(0);
     command(T6963_SET_GRAPHIC_AREA);
     data(0);
-    data(0);
+    data(8);
     command(T6963_SET_TEXT_HOME_ADDRESS);
     data(256 / 8);
     data(0);
     command(T6963_SET_TEXT_AREA);
-    data(((32 / 2) - 1));
-    data(0x00);
+    //data(((32 / 2) - 1));
+    data(0b11110);
+    data(0x0);
     command(T6963_SET_OFFSET_REGISTER);
     command(T6963_DISPLAY_MODE | 0b1000);
     command(T6963_MODE_SET);
