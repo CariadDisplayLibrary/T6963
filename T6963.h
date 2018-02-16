@@ -72,7 +72,7 @@ class T6963 : public DisplayCore {
 
         void initializeDevice();
 
-        void invertDisplay(boolean __attribute__((unused)) i) {}
+        void invertDisplay(bool __attribute__((unused)) i) {}
         void displayOn() {}
         void displayOff() {}
         void setRotation(int __attribute__((unused)) rotation) {}
