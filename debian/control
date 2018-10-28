@@ -6,14 +6,14 @@ Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
 Package: libdisplaycore-driver-t6963
-Section: main
 Architecture: all
 XBSC-Group: DisplayCore
 XBSC-Subgroup: Drivers
+XBSC-Subsubgroup: LCD
 Depends: libdisplaycore-core
 Recommends: libdisplaycore-font-topaz, libdisplaycore-font-display7seg
 Provides: T6963.h
-Description: T6963 LCD
+Description: T6963
 
 
 
