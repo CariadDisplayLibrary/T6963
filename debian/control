@@ -13,7 +13,7 @@ XBSC-Subgroup: Drivers
 Depends: libdisplaycore-core
 Recommends: libdisplaycore-font-topaz, libdisplaycore-font-display7seg
 Provides: T6963.h
-Description: T6963 LCD driver for DisplayCore
+Description: T6963 LCD
 
 
 
