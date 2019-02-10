@@ -91,6 +91,7 @@ void T6963::data(uint8_t d) {
     digitalWrite(_d5, d & 0x20);
     digitalWrite(_d6, d & 0x40);
     digitalWrite(_d7, d & 0x80);
+    delayMicroseconds(1);
     digitalWrite(_wr, LOW);
     delayMicroseconds(1);
     digitalWrite(_wr, HIGH);
@@ -106,6 +107,7 @@ void T6963::command(uint8_t d) {
     digitalWrite(_d5, d & 0x20);
     digitalWrite(_d6, d & 0x40);
     digitalWrite(_d7, d & 0x80);
+    delayMicroseconds(1);
     digitalWrite(_wr, LOW);
     delayMicroseconds(1);
     digitalWrite(_wr, HIGH);
