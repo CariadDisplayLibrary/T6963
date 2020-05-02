@@ -1,9 +1,9 @@
 #ifndef _T6963_H
 #define _T6963_H
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
-class T6963 : public DisplayCore {
+class T6963 : public Cariad {
     private:
     public:
         uint8_t _buffer[2048];

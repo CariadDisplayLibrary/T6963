@@ -1,17 +1,18 @@
-Source: libdisplaycore-driver-t6963
+Source: libcariad-driver-t6963
 Section: main
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 
-Package: libdisplaycore-driver-t6963
+Package: libcariad-driver-t6963
+Replaces: libdisplaycore-driver-t6963
 Architecture: all
-XBSC-Group: DisplayCore
+XBSC-Group: Cariad
 XBSC-Subgroup: Drivers
 XBSC-Subsubgroup: LCD
-Depends: libdisplaycore-core
-Recommends: libdisplaycore-font-topaz, libdisplaycore-font-display7seg
+Depends: libcariad-core
+Recommends: libcariad-font-topaz, libcariad-font-display7seg
 Provides: T6963.h
 Description: T6963
 
